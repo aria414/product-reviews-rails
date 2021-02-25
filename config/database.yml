@@ -80,7 +80,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: products_reviews_app_api_production
-  username: products_reviews_app_api
-  password: <%= ENV['PRODUCTS_REVIEWS_APP_API_DATABASE_PASSWORD'] %>
+url: <%= ENV['MY_APP_DATABASE_URL'] %>
